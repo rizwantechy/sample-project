@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     
+    <script language="javascript">
+
+        function area()
+        {
+           var length,breath,result;
+             length = document.frm.frmlength.value;
+             breath = document.frm.frmbreath.value;
+             
+            result = Number (length) *Number( breath);
+            document.frm.frmresult.value = result;
+
+        }
+    </script>
+</head>
+<body>
+    
+<form  name="frm">
+    <p>
+    length:
+    <input type="text" name="frmlength" >
+    </p>
+
+    <p>
+    breadth:
+    <input type="text"  name="frmbreath">
+    </p>
+    <p>
+       <input type="text" name="frmresult">
+    </p>
+    
+    <input type="button" value="Calculate" onclick="area()">
+</form>
+</body>
+
+  
+</body>
+</html>
